@@ -29,23 +29,22 @@
 		</button>
 
 		{#if isMenuOpen}
-			<div class="fixed inset-0 z-40 h-screen w-screen" onclick={closeMenu}></div>
+			<button class="fixed inset-0 z-40 h-screen w-screen" onclick={closeMenu}></button>
 			
 			<div class="absolute right-0 mt-2 z-50 w-48 rounded-md bg-white py-1 text-gray-800 shadow-xl border border-gray-100 flex flex-col">
-				<a 
+				<button
 					
 					class="px-4 py-2 text-sm text-left no-underline hover:bg-gray-100 transition-colors"
 					onclick={closeMenu}
 				>
 					Panel de Control
-				</a>
-				<a 
-					
+				</button>
+				<button
 					class="px-4 py-2 text-sm text-left no-underline hover:bg-gray-100 transition-colors"
 					onclick={closeMenu}
 				>
 					Configuración
-				</a>
+				</button>
 				
 				<!--
 				<hr class="border-t border-gray-200 my-1" />
