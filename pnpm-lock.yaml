@@ -28,8 +28,8 @@ importers:
         specifier: ^3.12.2
         version: 3.12.2
       '@lucide/svelte':
-        specifier: ^1.21.0
-        version: 1.21.0(svelte@5.56.3(@typescript-eslint/types@8.61.1))
+        specifier: ^0.577.0
+        version: 0.577.0(svelte@5.56.3(@typescript-eslint/types@8.61.1))
       '@sveltejs/adapter-auto':
         specifier: latest
         version: 7.0.1(@sveltejs/kit@2.65.1(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.3(@typescript-eslint/types@8.61.1))(vite@8.0.16(@types/node@22.19.21)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.22.4)))(svelte@5.56.3(@typescript-eslint/types@8.61.1))(typescript@6.0.3)(vite@8.0.16(@types/node@22.19.21)(esbuild@0.28.1)(jiti@2.7.0)(tsx@4.22.4)))
@@ -707,8 +707,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@lucide/svelte@1.21.0':
-    resolution: {integrity: sha512-MEv//A7Jv3kHukZowv/DWp1MAtUzJKYwtJsmnQ7X98lCgtac3z3NbaToDl3Q6jO3gS9sougFpcD+t+YuxOkRMw==}
+  '@lucide/svelte@0.577.0':
+    resolution: {integrity: sha512-0P6mkySd2MapIEgq08tADPmcN4DHndC/02PWwaLkOerXlx5Sv9aT4BxyXLIY+eccr0g/nEyCYiJesqS61YdBZQ==}
     peerDependencies:
       svelte: ^5
 
@@ -2465,7 +2465,7 @@ snapshots:
   '@libsql/win32-x64-msvc@0.5.29':
     optional: true
 
-  '@lucide/svelte@1.21.0(svelte@5.56.3(@typescript-eslint/types@8.61.1))':
+  '@lucide/svelte@0.577.0(svelte@5.56.3(@typescript-eslint/types@8.61.1))':
     dependencies:
       svelte: 5.56.3(@typescript-eslint/types@8.61.1)
 
