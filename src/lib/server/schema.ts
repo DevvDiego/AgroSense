@@ -1,17 +1,15 @@
-import { sqliteTable, text, integer } from 'drizzle-orm/sqlite-core';
+import { mysqlTable, int, varchar } from 'drizzle-orm/mysql-core';
 
-// Tabla de Usuarios para el control de accesos básico
-export const users = sqliteTable('users', {
-  id: integer('id').primaryKey({ autoIncrement: true }),
-  email: text('email').notNull().unique(),
-  role: text('role').$type<'admin' | 'user'>().default('user').notNull(), // Control de roles simplificado
+export const users = mysqlTable('users', {
+    id: int('id').primaryKey().autoincrement(),
+    email: varchar('email', { length: 255 }).notNull().unique(),
+    role: varchar('role', { length: 50 }).$type<'admin' | 'user'>().default('user').notNull(),
 });
 
-
-export const sensorData = sqliteTable('sensor_data', {
-  id: integer('id').primaryKey({ autoIncrement: true }),
-  deviceId: text('device_id').notNull(),
-  temperature: integer('temperature'),
-  humidity: integer('humidity'),
-  timestamp: integer('timestamp').notNull(),
+export const sensorData = mysqlTable('sensor_data', {
+    id: int('id').primaryKey().autoincrement(),
+    deviceId: varchar('device_id', { length: 100 }).notNull(),
+    temperature: int('temperature'),
+    humidity: int('humidity'),
+    timestamp: int('timestamp').notNull(),
 });

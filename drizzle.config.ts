@@ -1,10 +1,11 @@
+import 'dotenv/config';
 import { defineConfig } from 'drizzle-kit';
 
 export default defineConfig({
     schema: './src/lib/server/schema.ts',
     out: './drizzle',
-    dialect: 'sqlite',
+    dialect: 'mysql',
     dbCredentials: {
-      url: 'file:local.db',  
+      url: process.env.DATABASE_URL!,
     },
 });
